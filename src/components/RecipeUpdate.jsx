@@ -4,7 +4,7 @@ import { TextField, FormLabel, Box, Button } from "@mui/material";
 import { useParams } from 'react-router-dom'
 import {useNavigate} from "react-router-dom";
 
-const RecipeDetail = () => {
+const RecipeUpdate = () => {
     const [info, setInfo] = useState({});
     const id = useParams().id;
     const navi = useNavigate();  
@@ -76,4 +76,4 @@ const RecipeDetail = () => {
   )
 }
 
-export default RecipeDetail
+export default RecipeUpdate
