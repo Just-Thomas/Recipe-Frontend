@@ -11,7 +11,7 @@ const RecipeUpdate = () => {
     
     useEffect(() => {
         const fetch = async() => {
-            await axios.get(`https://recipe-seek.herokuapp.com/api/recipe/${id}`)
+            await axios.get(`https://recipe-seek.onrender.com/api/recipe/${id}`)
             .then((res) => res.data)
             .then((display)=>setInfo(display.data));
         };
@@ -20,7 +20,7 @@ const RecipeUpdate = () => {
     }, [id])
 
     const dbRequest  = async() => {
-      await axios.put(`https://recipe-seek.herokuapp.com/api/recipe/${id}`, {
+      await axios.put(`https://recipe-seek.onrender.com/api/recipe/${id}`, {
         name:String(info.name),
         image:String(info.image),
        description:String(info.description),

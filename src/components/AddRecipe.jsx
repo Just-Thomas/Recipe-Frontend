@@ -20,7 +20,7 @@ const AddRecipe = () => {
   };
   
   const dbRequest = async() => {
-    await axios.post("https://recipe-seek.herokuapp.com/api/recipe", {
+    await axios.post("https://recipe-seek.onrender.com/api/recipe", {
       name:String(info.name),
       image:String(info.image),
       description:String(info.description),

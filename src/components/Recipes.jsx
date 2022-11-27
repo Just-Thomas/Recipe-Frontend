@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Recipe from "./Recipe";
 import "./RecipeStyle.css";
 import axios from 'axios';
-const URL = 'https://recipe-seek.herokuapp.com/api/recipe';
+const URL = 'https://recipe-seek.onrender.com/api/recipe';
 
 const fetch = async() => {
     return await axios.get(URL).then((res) => res.data);

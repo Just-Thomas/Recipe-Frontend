@@ -11,7 +11,7 @@ const RecipeDelete = () => {
     
     useEffect(() => {
         const fetch = async() => {
-            await axios.get(`https://recipe-seek.herokuapp.com/api/recipe/${id}`)
+            await axios.get(`https://recipe-seek.onrender.com/api/recipe/${id}`)
             .then((res) => res.data)
             .then((display)=>setInfo(display.data));
         };

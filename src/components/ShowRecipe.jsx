@@ -12,7 +12,7 @@ const ShowRecipe = () => {
     
     useEffect(() => {
     const dbRequest  = async() => {
-      await axios.get(`https://recipe-seek.herokuapp.com/api/recipe/${id}`, {
+      await axios.get(`https://recipe-seek.onrender.com/api/recipe/${id}`, {
         name:String(info.name),
         image:String(info.image),
        description:String(info.description),
