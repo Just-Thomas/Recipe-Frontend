@@ -20,7 +20,7 @@ const RecipeDelete = () => {
     }, [id])
 
     const dbRequest  = async() => {
-      await axios.delete(`https://recipe-seek.herokuapp.com/api/recipe/${id}`, {
+      await axios.delete(`https://recipe-seek.onrender.com/api/recipe/${id}`, {
         name:String(info.name),
         image:String(info.image),
        description:String(info.description),
